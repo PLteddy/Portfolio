@@ -5,7 +5,21 @@
       "projects": "PROJETS",
       "apropos": "À PROPOS",
       "text_about": "Je suis actuellement en deuxième année de MMI (Métiers du Multimédia et de l'Internet), un parcours qui m'a permis d'explorer une multitude de domaines créatifs et techniques. Ce que j'aime dans ce cursus, c'est la diversité des compétences que l'on peut y développer. Je m'intéresse autant à coder un site web qu'à concevoir un logo ou à imaginer des interactions utilisateur.",
-      "cv_button": "VOIR MON CV"
+      "cv_button": "VOIR MON CV",
+      "skillsTitle": "COMPÉTENCES",
+      "projects_heading": "Projets mis en avant",
+      "project_1_title": "MOTION DESIGN DE VULGARISATION SCIENTIFIQUE",
+      "project_1_description": "Recherche et synthèse scientifique sur les ondes térahertz, rédaction d'un script et d'un storyboard structurant l'histoire visuelle. <br> Réalisation d'un moodboard et conception des éléments visuels, suivis de leur animation dans un style dynamique et informatif. <br> Vidéos finales exportées en versions FR et EN avec sous-titres adaptés (.srt).",
+      "project_1_technos": "ILLUSTRATOR · AFTER EFFECTS · PREMIERE PRO · REAPER",
+      "project_2_title": "SITE DE RÉSERVATION DE PRÊT DE MATÉRIEL",
+      "project_2_description": "Organisation des étapes du projet selon les principes des méthodes agiles pour une gestion efficace et collaborative. <br> Étude des besoins des étudiants et du personnel du département MMI, afin de concevoir une solution adaptée à leurs usages spécifiques. <br> Création d'une interface claire et intuitive, facilitant la navigation et l'interaction avec le système de réservation. <br> Conception et intégration d'un service Web en HTML, CSS, PHP, et MySQL, permettant la gestion des stocks, des emprunts, et des retours de matériel multimédia.",
+      "project_2_technos": "NOTION · FIGMA · PHP · HTML · CSS · MYSQL",
+      "project_3_title": "SITE VITRINE & CRÉATION IDENTITÉ VISUELLE",
+      "project_3_description": "Définition des valeurs d'une marque, création de logo, choix des palettes de couleurs et typographies pour refléter l'esprit de la marque. <br> Réalisation d'une maquette sur Figma, avec une navigation intuitive et une mise en avant des produits et de l'histoire de la marque. <br> Intégration en HTML, CSS, et JS pour un rendu fonctionnel et esthétique.",
+      "project_3_technos": "ILLUSTRATOR · PHOTOSHOP · FIGMA · GITHUB · VSCODE",
+      "btn_more_info": "En savoir plus",
+      "btn_all_projects": "Voir tous les projets"
+
     },
     "en": {
       "description": "WEB, DESIGN, VIDEO AND MORE. <br> DISCOVER MY JOURNEY AND MY CREATIONS.",
@@ -13,7 +27,20 @@
       "projects": "PROJECTS",
       "apropos": "ABOUT",
       "text_about": "I am currently in my second year of MMI (Multimedia and Internet Professions), a program that has allowed me to explore a variety of creative and technical fields. What I love about this course is the diversity of skills you can develop. I'm as interested in coding a website as I am in designing a logo or imagining user interactions.",
-      "cv_button": "VIEW MY CV"
+      "cv_button": "VIEW MY CV",
+      "skillsTitle": "SKILLS",
+      "projects_heading": "Highlighted Projects",
+      "project_1_title": "SCIENTIFIC OUTREACH MOTION DESIGN",
+      "project_1_description": "Scientific research and synthesis on terahertz waves, writing a script and storyboard structuring the visual story. <br> Creation of a mood board and design of visual elements, followed by their animation in a dynamic and informative style. <br> Final videos exported in both FR and EN versions with adapted subtitles (.srt).",
+      "project_1_technos": "ILLUSTRATOR · AFTER EFFECTS · PREMIERE PRO · REAPER",
+      "project_2_title": "EQUIPMENT LOAN RESERVATION SITE",
+      "project_2_description": "Organizing project steps according to agile methods for efficient and collaborative management. <br> Studying the needs of students and MMI department staff to design a solution tailored to their specific uses. <br> Creating a clear and intuitive interface, facilitating navigation and interaction with the reservation system. <br> Designing and integrating a web service in HTML, CSS, PHP, and MySQL for managing stock, loans, and returns of multimedia equipment.",
+      "project_2_technos": "NOTION · FIGMA · PHP · HTML · CSS · MYSQL",
+      "project_3_title": "SHOWCASE WEBSITE & BRAND IDENTITY CREATION",
+      "project_3_description": "Defining brand values, creating a logo, selecting color palettes and typography to reflect the brand's spirit. <br> Designing a mock-up on Figma, with intuitive navigation and highlighting the brand's products and story. <br> Integration in HTML, CSS, and JS for a functional and aesthetic result.",
+      "project_3_technos": "ILLUSTRATOR · PHOTOSHOP · FIGMA · GITHUB · VSCODE",
+      "btn_more_info": "Learn more",
+      "btn_all_projects": "View all projects"
     }
   }
   
