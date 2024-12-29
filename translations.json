@@ -1,0 +1,19 @@
+{
+    "fr": {
+      "description": "WEB, DESIGN, VIDÉO ET PLUS ENCORE. <br> DÉCOUVREZ MON PARCOURS ET MES CRÉATIONS.",
+      "about": "À PROPOS",
+      "projects": "PROJETS",
+      "apropos": "À PROPOS",
+      "text_about": "Je suis actuellement en deuxième année de MMI (Métiers du Multimédia et de l'Internet), un parcours qui m'a permis d'explorer une multitude de domaines créatifs et techniques. Ce que j'aime dans ce cursus, c'est la diversité des compétences que l'on peut y développer. Je m'intéresse autant à coder un site web qu'à concevoir un logo ou à imaginer des interactions utilisateur.",
+      "cv_button": "VOIR MON CV"
+    },
+    "en": {
+      "description": "WEB, DESIGN, VIDEO AND MORE. <br> DISCOVER MY JOURNEY AND MY CREATIONS.",
+      "about": "ABOUT",
+      "projects": "PROJECTS",
+      "apropos": "ABOUT",
+      "text_about": "I am currently in my second year of MMI (Multimedia and Internet Professions), a program that has allowed me to explore a variety of creative and technical fields. What I love about this course is the diversity of skills you can develop. I'm as interested in coding a website as I am in designing a logo or imagining user interactions.",
+      "cv_button": "VIEW MY CV"
+    }
+  }
+  
