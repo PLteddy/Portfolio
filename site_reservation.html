@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yussera Sebdaoui</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projects.html" data-key="projects">Projets</a></li>
+                <li><a href="about.html" data-key="about">À propos</a></li>
+                <li>
+                    <button id="dark-mode-toggle">🌙</button>
+                </li>
+                <li>
+                    <button id="lang-toggle">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <h1>SITE DE RÉSERVATION DE PRÊT DE MATÉRIEL</h1>
+        <div class="tags">
+          <span>#2024</span>
+          <span>#DÉVELOPPEMENT WEB</span>
+          <span>#CRÉATION NUMÉRIQUE</span>
+          <span>#PHP</span>
+          <span>#JS</span>
+          <span>#HTML/CSS</span>
+          <span>#RESPONSIVE</span>
+        </div>
+        <div class="highlight">
+          <blockquote>
+            <img src="assets/test.png" alt="Image représentative du projet">
+          </blockquote>
+          <p>« On pleure parfois les illusions avec autant de tristesse que les morts. »</p>
+        </div>
+        <div class="context-grid">
+          <div class="context-block">
+            <h3>CONTEXTE</h3>
+            <p>Création d'un site pour la gestion de prêt de matériel dans le cadre d'un projet universitaire. Focus sur la gestion dynamique et la simplicité d'utilisation.</p>
+          </div>
+          <div class="context-block">
+            <h3>OBJECTIFS</h3>
+            <p>Faciliter la réservation et le suivi des équipements pour une meilleure gestion des inventaires.</p>
+          </div>
+          <div class="context-block">
+            <h3>TECHNOLOGIES UTILISÉES</h3>
+            <p>HTML, CSS, JS, PHP, MySQL. Conception avec un design adaptatif pour garantir une compatibilité mobile.</p>
+          </div>
+          <div class="context-block">
+            <h3>LIVRABLES</h3>
+            <p>Un site complet avec système de gestion, des documents explicatifs pour l'utilisateur, et un guide technique pour les développeurs.</p>
+          </div>
+        </div>
+        <section class="grid">
+            <div class="card_projects" onclick="openLightbox('assets/test.png')">
+              <img src="assets/test.png" alt="Description image 1">
+              <p>« On pleure parfois les illusions avec autant de tristesse que les morts. »</p>
+            </div>
+            <div class="card_projects" onclick="openLightbox('assets/test.png')">
+              <img src="assets/test.png" alt="Description image 2">
+              <p>« On pleure parfois les illusions avec autant de tristesse que les morts. »</p>
+            </div>
+            <div class="card_projects" onclick="openLightbox('assets/test.png')">
+              <img src="assets/test.png" alt="Description image 3">
+              <p>« On pleure parfois les illusions avec autant de tristesse que les morts. »</p>
+            </div>
+          </section>
+          <!-- Lightbox -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Image en grand">
+          </div>
+    
+      </section>
+
+
+
+    <section class="contact">
+        <h1 data-key="contactme">ME CONTACTER</h1>
+        <div class="contact-info">
+          <a href="mailto:yussera.sebdaoui@gmail.com">YUSSERA.SEBDAOUI@GMAIL.COM</a>
+          <a href="https://www.linkedin.com/in/yussera-sebdaoui-2a2405200/?originalSubdomain=fr" target="_blank">LINKEDIN</a>
+          <a href="https://github.com/" target="_blank">GITHUB</a>
+        </div>
+        <p class="stage-info" data-key="stageinfo">
+          Actuellement en recherche d’un stage pouvant se poursuivre en alternance, à partir d’avril 2025.
+        </p>
+        <footer>
+          <p data-key="droits">© 2024 Yussera Sebdaoui Tous droits réservés</p>
+          <nav>
+            <a href="projects.html" data-key="projects">Projets</a> ·
+            <a href="about.html" data-key="about">À propos</a> ·
+            <a href="#cv" data-key="CV">Mon CV</a>
+          </nav>
+        </footer>
+      </section>
+      
+    
+        </main>
+    </body>
+    </html>
+    

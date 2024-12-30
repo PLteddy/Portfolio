@@ -18,7 +18,15 @@
       "project_3_description": "Définition des valeurs d'une marque, création de logo, choix des palettes de couleurs et typographies pour refléter l'esprit de la marque. <br> Réalisation d'une maquette sur Figma, avec une navigation intuitive et une mise en avant des produits et de l'histoire de la marque. <br> Intégration en HTML, CSS, et JS pour un rendu fonctionnel et esthétique.",
       "project_3_technos": "ILLUSTRATOR · PHOTOSHOP · FIGMA · GITHUB · VSCODE",
       "btn_more_info": "En savoir plus",
-      "btn_all_projects": "Voir tous les projets"
+      "btn_all_projects": "Voir tous les projets",
+      "contactme": "Me contacter",
+      "stageinfo":"Actuellement en recherche d’un stage pouvant se poursuivre en alternance, à partir d’avril 2025.",
+      "droits": "© 2024 Yussera Sebdaoui Tous droits réservés",
+      "CV":"Mon CV",
+      "webdev":"#Développement Web",
+      "creanum":"#Création Numérique",
+      "games":"#Jeux Vidéos"
+      
 
     },
     "en": {
@@ -40,7 +48,14 @@
       "project_3_description": "Defining brand values, creating a logo, selecting color palettes and typography to reflect the brand's spirit. <br> Designing a mock-up on Figma, with intuitive navigation and highlighting the brand's products and story. <br> Integration in HTML, CSS, and JS for a functional and aesthetic result.",
       "project_3_technos": "ILLUSTRATOR · PHOTOSHOP · FIGMA · GITHUB · VSCODE",
       "btn_more_info": "Learn more",
-      "btn_all_projects": "View all projects"
+      "btn_all_projects": "View all projects",
+      "contactme": "Contact me",
+      "stageinfo":"Currently looking for an internship that can continue as an apprenticeship, starting in April 2025.",
+      "droits": "© 2024 Yussera Sebdaoui All rights reserved",
+      "CV":"My CV",
+      "webdev":"#Web Development",
+      "creanum":"#Digital Creation",
+      "games":"#Video Games"
     }
   }
   

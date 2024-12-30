@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const darkModeToggle = document.getElementById('dark-mode-toggle');
   const langToggle = document.getElementById('lang-toggle');
-  const description = document.getElementById('description');
   const navLinks = document.querySelectorAll('nav ul li a'); // Les liens du menu
   let isDarkMode = false;
   let isFrench = true;
@@ -11,26 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function updateTranslations() {
     const lang = isFrench ? 'fr' : 'en';
-
-    // Traduction de la description principale
-    description.innerHTML = translations[lang].description;
-
-    // Traduction des liens de navigation
-    document.querySelector('a[href="#about"]').textContent = translations[lang].about;
-    document.querySelector('a[href="#projects"]').textContent = translations[lang].projects;
-
-    // Traduction de la section "À PROPOS"
-    const aboutTitle = document.querySelector('.about h1');
-    const aboutText = document.querySelector('.about p');
-    const cvButton = document.querySelector('.button-container .btn');
-
-    if (aboutTitle) aboutTitle.textContent = translations[lang].apropos; // Titre "À PROPOS"
-    if (aboutText) aboutText.textContent = translations[lang].text_about; // Texte descriptif
-    if (cvButton) cvButton.textContent = translations[lang].cv_button; // Texte du bouton
-
-    // Traduction de la section "SKILLS"
-    const skillsTitle = document.querySelector('.skills h1');
-    if (skillsTitle) skillsTitle.textContent = translations[lang].skillsTitle; // Titre "SKILLS"
 
     // Traduction des éléments avec attribut data-key
     document.querySelectorAll('[data-key]').forEach(element => {
@@ -82,3 +61,55 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   document.addEventListener('click', activate, false);
 });
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const filters = document.querySelectorAll(".filters a");
+    const cards = document.querySelectorAll(".grid .card");
+
+    filters.forEach(filter => {
+      filter.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const filterCategory = filter.getAttribute("data-filter");
+
+        cards.forEach(card => {
+          const cardCategories = card.getAttribute("data-category");
+
+          if (filterCategory === "all" || cardCategories.includes(filterCategory)) {
+            card.style.display = "block"; // Afficher la carte
+          } else {
+            card.style.display = "none"; // Masquer la carte
+          }
+        });
+
+        // Active le filtre sélectionné
+        filters.forEach(f => f.classList.remove("active"));
+        filter.classList.add("active");
+      });
+    });
+  });
+
+
+  
+
+
+  // Fonction pour ouvrir le lightbox
+  function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // Met à jour l'image dans le lightbox
+    lightboxImg.src = imageSrc;
+
+    // Affiche le lightbox
+    lightbox.style.display = 'flex';
+  }
+
+  // Fonction pour fermer le lightbox
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+
