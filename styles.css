@@ -374,8 +374,6 @@ button {
   box-shadow: 0 3px 10px rgba(0,0,0,0.3)
 }
 .item_projects {
-  width: 200px;
-  height: 300px;
   list-style-type: none;
   position: absolute;
   top: 50%;
@@ -404,6 +402,7 @@ button {
   &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
 }
 
+
 .content_projects {
   width: min(30vw,400px);
   position: absolute;
@@ -426,15 +425,15 @@ button {
   }
   & button {
     width: fit-content;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: #191919;
     border-radius: 0.25rem;
     padding: 0.75rem;
     cursor: pointer;
     margin-right: 1rem;
   }
   & button:hover {
-    background-color: #FFE528;
+    background-color: #ffe6286f;
     color: #191919;
   }
   & a {
