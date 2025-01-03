@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yussera Sebdaoui</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projects.html" data-key="projects">Projets</a></li>
+                <li><a href="about.html" data-key="about">À propos</a></li>
+                <li>
+                    <button id="dark-mode-toggle">🌙</button>
+                </li>
+                <li>
+                    <button id="lang-toggle">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <h1 data-key="nomade_titre">Identité visuelle et site vitrine d'une marque de parfum</h1>
+        <div class="tags">
+          <span>#2024</span>
+          <span data-key="webdev">#DÉVELOPPEMENT WEB</span>
+          <span>#BRAND DESIGN</span>
+          <span data-key="creanum">#CRÉATION NUMÉRIQUE</span>
+          <span>#PHOTOSHOP</span>
+          <span>#ILLUSTRATOR</span>
+          <span>#FIGMA</span>
+          <span>#HTML</span>
+          <span>#CSS</span>
+        </div>
+        <div class="highlight">
+          <blockquote>
+            <img src="assets/projets/nomade/nomade_ecran_accueil.png" alt="Image page d'accueil du site Nomade">
+          </blockquote>
+          <p>« Nomade is not just about fragrance; it’s about exploring the world, one breath at a time. »</p>
+          <a href="https://plteddy.github.io/Nomade/" target="_blank" rel="noopener noreferrer">
+            <button data-key="voirsite">Voir le site</button>
+          </a>
+          <a href="https://github.com/PLteddy/Nomade" target="_blank" rel="noopener noreferrer">
+            <button data-key="voirgith">Voir le repository GITHUB</button>
+          </a>          
+        </div>
+        <div class="context-grid">
+          <div class="context-block">
+            <h3 data-key="context">CONTEXTE</h3>
+            <p data-key="nomade_context">Création d'une identité visuelle et d'un site web pour une marque de parfum dans le cadre d'un projet personnel.</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="objectif">OBJECTIFS</h3>
+            <p data-key="nomade_objectif">Création d'éléments graphiques, d'une maquette web et de code afin de réaliser entièrement un site web vitrine. Avait aussi pour but de se familiariser avec figma.</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="outils">OUTILS UTILISÉS</h3>
+            <p>Illustrator, Photoshop, Figma, VSCODE (hmtl, css, js), GITHUB</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="livrables">LIVRABLES</h3>
+            <p data-key="nomade_livrables"> Identité visuelle d'une marque de parfum (logo, couleurs, police, mock-up), maquette du site web, site web. </p>
+          </div>
+        </div>
+        <section class="grid">
+            <div class="card_projects" onclick="openLightbox('assets/projets/nomade/brandesign.jpg')">
+              <img src="assets/projets/nomade/brandesign.jpg" alt="Identité visuelle de la marque">
+              <p data-key="nomade_annonce"> Brand design de la marque. 
+              </p>
+            </div>
+         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/44eRsxHcOz29nu1LF6xsLY/Nomade?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+          </section>
+          <!-- Lightbox -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Image en grand">
+          </div>
+    
+      </section>
+
+
+
+    <section class="contact">
+        <h1 data-key="contactme">ME CONTACTER</h1>
+        <div class="contact-info">
+          <a href="mailto:yussera.sebdaoui@gmail.com">YUSSERA.SEBDAOUI@GMAIL.COM</a>
+          <a href="https://www.linkedin.com/in/yussera-sebdaoui-2a2405200/?originalSubdomain=fr" target="_blank">LINKEDIN</a>
+          <a href="https://github.com/" target="_blank">GITHUB</a>
+        </div>
+        <p class="stage-info" data-key="stageinfo">
+          Actuellement en recherche d’un stage pouvant se poursuivre en alternance, à partir d’avril 2025.
+        </p>
+        <footer>
+          <p data-key="droits">© 2024 Yussera Sebdaoui Tous droits réservés</p>
+          <nav>
+            <a href="projects.html" data-key="projects">Projets</a> ·
+            <a href="about.html" data-key="about">À propos</a> ·
+            <a href="#cv" data-key="CV">Mon CV</a>
+          </nav>
+        </footer>
+      </section>
+      
+    
+        </main>
+    </body>
+    </html>
+    

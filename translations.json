@@ -25,8 +25,27 @@
       "CV":"Mon CV",
       "webdev":"#Développement Web",
       "creanum":"#Création Numérique",
-      "games":"#Jeux Vidéos"
-      
+      "games":"#Jeux Vidéos",
+      "brandesignechoes": "Identité visuelle pour un groupe de rock alternatif",
+      "context": "Contexte",
+      "context_echoes":"Création d'une identité visuelle pour un groupe de rock alternatif dans le cadre d'un projet personnel.",
+      "objectif":"Objectif",
+      "objectif_echoes":"Création d'éléments graphiques pouvant plaire les fans de rock et d’esthétique gothique/industrielle, âgés de 18 à 35 ans. Le but était aussi de se familiariser à photoshop avec des mock-up notamment.",
+      "outils":"Outils Utilisés",
+      "livrables":"Livrables",
+      "livrables_echoes":"Logo, Affiche de concert, Mock-up.",
+      "echoes_annonce":"Annonce de concert fictif",
+      "echoes_mockup_poster":"Mock-up du poster sur un panneau d'affichage.",
+      "echoes_mockup_magazine":"Mock-up du poster sur un magazine.",
+      "echoes_logo":"Logo du groupe.",
+      "nomade_titre":"Identité visuelle et site vitrine d'une marque de parfum",
+      "nomade_contexte":"Création d'une identité visuelle et d'un site web pour une marque de parfum dans le cadre d'un projet personnel.",
+      "nomade_objectif":"Créer une identité visuelle et un site web qui reflètent l'esprit de la marque, en mettant en avant ses valeurs et ses produits. Avait aussi pour but de se familiariser avec figma.",
+      "nomade_livrables":"Identité visuelle d'une marque de parfum (logo, couleurs, police, mock-up), maquette du site web, site web.",
+      "nomade_annonce": "Brand design de la marque.",
+      "voirsite":"Voir le site",
+      "voirgith":"Voir le repository GitHub"
+
 
     },
     "en": {
@@ -55,7 +74,27 @@
       "CV":"My CV",
       "webdev":"#Web Development",
       "creanum":"#Digital Creation",
-      "games":"#Video Games"
+      "games":"#Video Games",
+      "brandesignechoes": "Visual identity for an alternative rock band",
+      "context": "Context",
+      "context_echoes":"Creation of a visual identity for an alternative rock band as part of a personal project.",
+      "objectif":"Objective",
+      "objectif_echoes":"Creating graphic elements that would appeal to rock fans and those who appreciate gothic/industrial aesthetics, aged 18 to 35. The goal was also to familiarize myself with photoshop, especially with mock-ups.",
+      "outils":"Tools Used",
+      "livrables":"Deliverables",
+      "livrables_echoes":"Logo, Concert poster, Mock-up.",
+      "echoes_annonce":"Fictitious concert announcement",
+      "echoes_mockup_poster":"Mock-up of the poster on a billboard.",
+      "echoes_mockup_magazine":"Mock-up of the poster on a magazine.",
+      "echoes_logo":"Band logo.",
+      "nomade_titre":"Visual identity and showcase website for a perfume brand",
+      "nomade_contexte":"Creation of a visual identity and website for a perfume brand as part of a personal project.",
+      "nomade_objectif":"Create a visual identity and website that reflect the brand's spirit, highlighting its values and products. The goal was also to familiarize myself with figma.",
+      "nomade_livrables":"Visual identity of a perfume brand (logo, colors, font, mock-up), website mock-up, website.",
+      "nomade_annonce": "Brand design of the brand.",
+      "voirsite":"View the site",
+      "voirgith":"View the GitHub repository"
+
     }
   }
   
