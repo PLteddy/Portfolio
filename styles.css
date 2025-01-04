@@ -64,6 +64,13 @@ button {
     color: var(--text-color);
 }
 
+
+iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+} 
+
 .hero {
   height: 80vh;
     overflow: hidden;
@@ -970,4 +977,24 @@ footer nav a:hover {
 .cta:hover {
   transform: scale(1.05);
   background: #e0b600;
+}
+
+.project-detail {
+  a {
+    text-decoration: none;
+  }
+
+  & button {
+    width: fit-content;
+    background-color: var(--yellow);
+    color: #191919;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  & button:hover {
+    background-color: #ffe6286f;
+    color: #191919;
+  }
 }
