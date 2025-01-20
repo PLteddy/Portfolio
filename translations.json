@@ -65,7 +65,14 @@
       "thz_context": "Création dune vidéo de vulgarisation scientifique sous forme de motion design dans le cadre d'un projet universitaire.",
       "thz_objectif": " Réalisation d'une vidéo de 1min expliquant le fonctionnement et les applications des ondes térahertz. ",
       "thz_livrables":"Moodboad, Storyboard, Script, Elements graphiques, Vidéos finales (1080*1080 & 1920*1080), sous-titre anglais et français.",
-      "thz_moodboard":"Moodboard associé au projet. "
+      "thz_moodboard":"Moodboard associé au projet. ",
+      "loading_titre":"Animation de chargement web",
+      "loading_context":"Réalisation d'une animation de chargement web en .json avec Lottie dans le cadre d'un projet universitaire. ",
+      "loading_objectif":"Création de l’animation en flat design en s'aidant d'after effects et lottie.",
+      "loading_livrable": "Animation de chargement en .json , site web intégrant l'animation et expliquant sa création.",
+      "loading_croquis": "Croquis de l'animation",
+      "loading_annonce": "Idée du projet fait sur blender et after effects",
+      "loading_vf": "Version finale de l'animation"
     
 
     },
@@ -135,9 +142,15 @@
       "thz_context": "Creation of a popular science video in the form of motion design as part of a university project.",
       "thz_objectif": "Production of a 1min video explaining how terahertz waves work and their applications.",
       "thz_livrables":"Moodboad, Storyboard, Script, Graphic elements, Final videos (1080*1080 & 1920*1080), English and French subtitles.",
-      "thz_moodboard":"Moodboard associated with the project. "
-      
-
+      "thz_moodboard":"Moodboard associated with the project. ",
+      "loading_titre":"Web loading animation",
+      "loading_context":"Creation of a .json web loading animation with Lottie as part of a university project. ",
+      "loading_objectif":"Creation of a flat design animation using after effects and lottie",
+      "loading_livrable": "Loading animation in .json, website integrating the animation and explaining its creation.",
+      "loading_croquis": "Sketch of the animation",
+      "loading_annonce": "Project idea made on blender and after effects",
+      "loading_vf": "Final version of the animation"
+    
     }
   }
   
