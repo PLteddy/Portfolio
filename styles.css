@@ -156,12 +156,25 @@ iframe {
 @media (max-width: 480px) {
   header {
       flex-direction: column;
-      gap: 0.2rem;
+  }
+  header a {
+    font-size: 1rem; /* Ajustez cette valeur selon vos besoins */
   }
   .bands {
-      margin: 0.5rem 0;
+      margin: 1rem 0;
+      
   }
+  .band.black2{
+    transform: rotate(-11.36deg) translateX(40px) translateY(-320px); 
+  }
+  .band.black1 {
+    transform: rotate(-7.71deg) translateX(60px) translateY(-450px);
+  }
+  .illustration img {
+    width: 400px;
+    height: 400px;
 
+  }
   #description {
       font-size: 1rem;
   }
@@ -340,14 +353,13 @@ iframe {
   .skills h1 {
     font-size: 2 rem; /* Réduire la taille de la police pour les petits écrans */
   }
-
+  .skills {
+    height: 50vh;
+  }
   .scrolling-line {
     font-size: 2rem; /* Réduire la taille de la police pour les petits écrans */
   }
 }
-
-
-
 
 
 /* projects */
@@ -481,39 +493,26 @@ iframe {
     & h4       { font-size: 0.7rem; }
     & h3       { font-size: 0.7rem; }
   }
-  .item_projects {
-    width: 160px;
-    height: 270px;
-
-    &:nth-child(3) { left: 50%; }
-    &:nth-child(4) { left: calc(50% + 170px); }
-    &:nth-child(5) { left: calc(50% + 340px); }
-    &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
-  }
 }
 
 @media (width < 650px) {
   .content_projects {
-    & .title_projects        { font-size: 0.9rem; }
-    & .description_projects  { font-size: 0.65rem; }
-    & button        { font-size: 0.7rem; }
-    & h4       { font-size: 0.7rem; }
-    & h3       { font-size: 0.7rem; }
+    & .title_projects        { font-size: 0.8rem; }
+    & .description_projects  { font-size: 0.50rem; }
+    & button        { font-size: 0.6rem; }
+    & h4       { font-size: 0.6rem; }
+    & h3       { font-size: 0.5rem; }
 
   }
-  .item_projects {
-    width: 130px;
-    height: 220px;
-
-    &:nth-child(3) { left: 50%; }
-    &:nth-child(4) { left: calc(50% + 140px); }
-    &:nth-child(5) { left: calc(50% + 280px); }
-    &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+  .description_projects {
+    width: 300px;
+    height: 120px;
+  }
+  .button {
+    width: 100px;
+    height: 50px;
   }
 }
-
-
-
 
 /* CONTACT */
 .contact {
