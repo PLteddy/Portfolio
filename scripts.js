@@ -91,7 +91,51 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.item_projects');
+    const prevBtn = document.querySelector('.btn.prev');
+    const nextBtn = document.querySelector('.btn.next');
+    let currentSlide = 0;
+    let interval;
+  
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function startAutoSlide() {
+      interval = setInterval(nextSlide, 25000);
+    }
+  
+    function resetAutoSlide() {
+      clearInterval(interval);
+      startAutoSlide();
+    }
+  
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  
+    // Initialize
+    showSlide(currentSlide);
+    startAutoSlide();
+  });
   
 
 
