@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yussera Sebdaoui projet echoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/logo.png" />
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projects.html" data-key="projects">Projets</a></li>
+                <li><a href="about.html" data-key="about">À propos</a></li>
+                <li>
+                    <button id="dark-mode-toggle">🌙</button>
+                </li>
+                <li>
+                    <button id="lang-toggle">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <h1 data-key="brandesignblacki">Identité visuelle pour un artiste français</h1>
+        <div class="tags">
+          <span>#2024</span>
+          <span>#BRAND DESIGN</span>
+          <span data-key="creanum">#CRÉATION NUMÉRIQUE</span>
+          <span>#PHOTOSHOP</span>
+          <span>#ILLUSTRATOR</span>
+          <span>#AFTER EFFECTS</span>
+          <span>#CLIP STUDIO PAINT</span>
+        </div>
+        <div class="highlight">
+          <blockquote>
+            <img src="assets/projets/blacki/funmaistriste2.jpg" alt="Image cover de l'album">
+          </blockquote>
+          <p>« Don't look at me like that. »</p>
+          <a href="https://open.spotify.com/intl-fr/artist/71PEBWomhyhkZhDrIkWHvr?si=bWkXt86DS4G_PPYGDJC0uA" target="_blank" rel="noopener noreferrer">
+            <button data-key="voirspotify">Voir le spotify de l'artiste</button>
+          </a>
+        </div>
+        <div class="context-grid">
+          <div class="context-block">
+            <h3 data-key="context">CONTEXTE</h3>
+            <p data-key="blacki_context">Création d'une identité visuelle pour un jeune artiste français dans le cadre d'un projet personnel.</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="objectif">OBJECTIFS</h3>
+            <p data-key="blacki_objectif">Création d'éléments graphiques pouvant alimenter ses réseaux et à structurer son univers.</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="outils">OUTILS UTILISÉS</h3>
+            <p>Illustrator, Photoshop, After Effects, Clip Studio Paint</p>
+          </div>
+          <div class="context-block">
+            <h3 data-key="livrables">LIVRABLES</h3>
+            <p data-key="blacki_livrables">Logo, Cover, Mock-up, Motion design, Photo de profil. </p>
+          </div>
+        </div>
+        <section class="grid">
+            <div class="card_projects" onclick="openLightbox('assets/projets/blacki/logos.gif')">
+              <img src="assets/projets/blacki/logos.gif" alt="logos de l'artiste">
+              <p data-key="blacki_logos"> Le logo de l'artiste et ses déclinaisons.
+              </p>
+            </div>
+            <div class="card_projects" onclick="openLightbox('assets/projets/blacki/bd.jpg')">
+                <img src="assets/projets/blacki/bd.jpg" alt="Brand design">
+                <p data-key="blacki_bd"> Brand design de l'artiste </p>
+              </div>
+            <div class="card_projects" onclick="openLightbox('assets/projets/blacki/pdpblackiv4.png ')">
+              <img src="assets/projets/blacki/pdpblackiv4.png" alt="Photo de profil de l'artiste"> 
+              <p data-key="blacki_pdp"> Photo de profil de l'artiste. </p>
+            </div>
+            <div class="card_projects" onclick="openLightbox('assets/projets/blacki/mockup1.jpg')">
+                <img src="assets/projets/blacki/mockup1.jpg" alt="Mock-up de la cover">
+                <p data-key="blacki_mockup"> Mock-up carte de visite. </p>
+                
+              </div>
+              <div class="card_projects" onclick="openLightbox('assets/projets/blacki/mockup3.jpg')">
+                <img src="assets/projets/blacki/mockup3.jpg" alt="Mock-up de la cover">
+                <p data-key="blacki_mockup"> Mock-up de la cover </p>
+                
+              </div>
+            </div>
+            <div class="card_projects">
+                <iframe width="320" height="240" src="https://www.youtube.com/embed/Nn1Zij96sHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p data-key="blacki_video">Motion Design d'une de ses musiques. </p>
+              </div>
+          <!-- Lightbox -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Image en grand">
+          </div>
+    
+      </section>
+
+
+
+    <section class="contact">
+        <h1 data-key="contactme">CONTACTEZ MOI</h1>
+        <div class="contact-info">
+          <a href="mailto:yussera.sebdaoui@gmail.com">YUSSERA.SEBDAOUI@GMAIL.COM</a>
+          <a href="https://www.linkedin.com/in/yussera-sebdaoui-2a2405200/?originalSubdomain=fr" target="_blank">LINKEDIN</a>
+          <a href="https://github.com/" target="_blank">GITHUB</a>
+        </div>
+        <p class="stage-info" data-key="stageinfo">
+          Actuellement en recherche d’un stage pouvant se poursuivre en alternance, à partir d’avril 2025.
+        </p>
+        <footer>
+          <p data-key="droits">© 2024 Yussera Sebdaoui Tous droits réservés</p>
+          <nav>
+            <a href="projects.html" data-key="projects">Projets</a> ·
+            <a href="about.html" data-key="about">À propos</a> ·
+            <a href="assets/cv.pdf" data-key="CV">Mon CV</a>
+          </nav>
+        </footer>
+      </section>
+      
+    
+        </main>
+    </body>
+    </html>
+    
