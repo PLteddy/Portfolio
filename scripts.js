@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const darkModeToggle = document.getElementById('dark-mode-toggle');
   const langToggle = document.getElementById('lang-toggle');
-  const navLinks = document.querySelectorAll('nav ul li a'); // Les liens du menu
-  let isDarkMode = false;
-  let isFrench = true;
 
-  // Charger les traductions depuis le fichier JSON
+  // Charger les préférences de l'utilisateur depuis localStorage
+  let isDarkMode = localStorage.getItem('darkMode') === 'true';
+  let isFrench = localStorage.getItem('language') !== 'en'; // Par défaut français
+
+  // Charger les traductions
   const translations = await fetch('translations.json').then(res => res.json());
 
   function updateTranslations() {
     const lang = isFrench ? 'fr' : 'en';
-
-    // Traduction des éléments avec attribut data-key
     document.querySelectorAll('[data-key]').forEach(element => {
       const key = element.getAttribute('data-key');
       if (translations[lang][key]) {
@@ -20,22 +19,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  // Appliquer le mode sombre si activé
+  function applyDarkMode() {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    darkModeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+  }
+
+  // Appliquer la langue sauvegardée
+  function applyLanguage() {
+    langToggle.textContent = isFrench ? 'EN' : 'FR';
+    updateTranslations();
+  }
+
   // Basculer le mode sombre
   darkModeToggle.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-    darkModeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+    localStorage.setItem('darkMode', isDarkMode); // Sauvegarder la préférence
+    applyDarkMode();
   });
 
   // Basculer la langue
   langToggle.addEventListener('click', () => {
     isFrench = !isFrench;
-    langToggle.textContent = isFrench ? 'EN' : 'FR';
-    updateTranslations(); // Appliquer les traductions mises à jour
+    localStorage.setItem('language', isFrench ? 'fr' : 'en'); // Sauvegarder la préférence
+    applyLanguage();
   });
 
-  // Initialisation (appliquer la langue par défaut)
-  updateTranslations();
+  // Appliquer les paramètres au chargement
+  applyDarkMode();
+  applyLanguage();
+
 
   // Effet de pause sur les lignes défilantes (skills)
   const scrollLines = document.querySelectorAll(".scroll-line, .scroll-line2");
