@@ -1,0 +1,76 @@
+.swiper {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    filter: blur(2px) brightness(0.9); /* Effet plus léger */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slide actif au centre */
+.swiper-slide-active {
+    filter: blur(0px) brightness(1); /* Netteté légère */
+    transform: scale(1.02); /* Zoom réduit */
+}
+#black-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.7s ease-in-out;
+    z-index: 100;
+}
+/* Styles des textes */
+.project-info {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0; /* Caché au départ */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* Texte en haut à gauche */
+.project-title {
+    top: 10px;
+    left: 10px;
+    transform: translateX(-20px);
+}
+
+/* Texte en haut à droite */
+.project-year {
+    top: 10px;
+    right: 10px;
+    transform: translateX(20px);
+}
+
+/* Effet d’apparition au hover */
+.swiper-slide:hover .project-info {
+    opacity: 1;
+    transform: translateX(0); /* Le texte revient à sa place */
+}

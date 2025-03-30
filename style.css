@@ -1,0 +1,259 @@
+/* Reset de base */
+@import url('switzer.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Switzer', sans-serif;
+}
+
+body {
+    background-color: #191919;
+    color: #faf9f3;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    background: #191919;
+    z-index: 98;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a, .menu-right a {
+    text-decoration: none;
+    color: #faf9f3;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.menu-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-right a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.menu-right a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu-right a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(255, 229, 40);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.menu-right a {
+    position: relative;
+    text-decoration: none;
+    color: #faf9f3;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+/* Filtres */
+.space {
+    margin-top: 80px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Footer */
+footer {
+    height: 38vh;
+    text-align: center;
+    padding: 2rem 0;
+    color: #faf9f3;
+    position: relative;
+}
+
+footer p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+footer span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+footer h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 0;
+}
+footer a {
+    position: relative;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #faf9f3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    overflow: hidden;
+}
+
+footer a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(255, 229, 40);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .3s ease;
+}
+
+footer a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Désactive le curseur par défaut */
+html, * {
+    cursor: none;
+}
+
+/* Style du curseur personnalisé */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFD700; /* Jaune */
+    pointer-events: none; /* Permet de cliquer à travers */
+    mix-blend-mode: difference; /* Meilleure visibilité sur fond sombre/clair */
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: 
+        width 0.3s ease,
+        height 0.3s ease,
+        background-color 0.3s ease;
+}
+
+/* Curseur agrandi sur les éléments cliquables */
+a, button, .swiper-slide, [onclick], [role="button"], [data-clickable] {
+    cursor: none !important;
+}
+
+.custom-cursor.active {
+    width: 40px;
+    height: 40px;
+    background-color: #ffe628cb; 
+}
+
+/* Media Queries */
+
+/* Tablettes (768px - 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem;
+    }
+    
+    nav {
+        gap: 1rem;
+    }
+    
+    .menu-right {
+        gap: 0.5rem;
+    }
+    
+    footer h1 {
+        font-size: 6rem;
+    }
+    
+    footer span {
+        font-size: 1rem;
+        top: 5px;
+        right: 10px;
+    }
+}
+
+/* Smartphones (max 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .menu-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .space {
+        margin-top: 60px;
+    }
+    
+    footer {
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    footer h1 {
+        font-size: 2rem;
+    }
+    
+    footer span {
+        font-size: 0.5rem;
+        top: 2px;
+        right: 2px;
+    }
+}
