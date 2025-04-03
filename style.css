@@ -212,6 +212,9 @@ a, button, .swiper-slide, [onclick], [role="button"], [data-clickable] {
         top: 5px;
         right: 10px;
     }
+    .custom-cursor {
+        display: none; /* Masque le curseur personnalisé */
+    }
 }
 
 /* Smartphones (max 767px) */
@@ -255,5 +258,8 @@ a, button, .swiper-slide, [onclick], [role="button"], [data-clickable] {
         font-size: 0.5rem;
         top: 2px;
         right: 2px;
+    }
+    .custom-cursor {
+        display: none; /* Masque le curseur personnalisé */
     }
 }

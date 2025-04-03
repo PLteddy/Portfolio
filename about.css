@@ -68,7 +68,7 @@
 /* Smartphones (max 767px) */
 @media (max-width: 767px) {
     .about-section {
-        padding: 4rem 1rem;
+        padding: 6rem 1rem;
         height: auto;
         font-size: 18px;
         text-align: center;
