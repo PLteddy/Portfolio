@@ -124,3 +124,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleViewBtn = document.getElementById("toggle-view");
+    const swiperContainer = document.querySelector(".swiper");
+    const projectsList = document.getElementById("projects-list");
+    
+    // État initial
+    let isListView = false;
+    
+    toggleViewBtn.addEventListener("click", function() {
+        isListView = !isListView;
+        
+        if (isListView) {
+            // Passer à la vue en liste
+            swiperContainer.classList.add("hidden");
+            projectsList.classList.remove("hidden");
+            toggleViewBtn.textContent = "VOIR EN CARROUSEL";
+        } else {
+            // Retour à la vue carrousel
+            swiperContainer.classList.remove("hidden");
+            projectsList.classList.add("hidden");
+            toggleViewBtn.textContent = "VOIR EN LISTE";
+        }
+    });
+    
+    // Gestion des clics sur les projets en mode liste
+    const projectItems = document.querySelectorAll(".project-item");
+    projectItems.forEach((item, index) => {
+        item.addEventListener("click", function() {
+            // Fondu noir
+            const blackOverlay = document.getElementById("black-overlay");
+            blackOverlay.style.opacity = "1";
+            
+            // Redirection vers la page du projet
+            setTimeout(() => {
+                window.location.href = `projet${index + 1}.html`;
+            }, 1200);
+        });
+    });
+});
