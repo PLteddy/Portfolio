@@ -87,9 +87,10 @@ nav a, .menu-right a {
 
 /* Filtres */
 .space {
-    margin-top: 80px;
+    margin-top: 50px; 
     text-align: center;
     padding: 1rem 0;
+    position: relative; 
 }
 
 
