@@ -283,6 +283,7 @@ a, button, .swiper-slide, [onclick], [role="button"], [data-clickable] {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    z-index: 99;
 }
 
 .view-toggle-btn:hover {
